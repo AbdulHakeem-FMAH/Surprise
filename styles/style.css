@@ -59,7 +59,7 @@
     content: "";
     top: 0;
   }
-  ..giftbox:after {
+  .giftbox:after {
     position: absolute;
     color: #fff;
     width: 100%;
