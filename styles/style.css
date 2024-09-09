@@ -59,18 +59,22 @@
     content: "";
     top: 0;
   }
-  .giftbox:after {
+  ..giftbox:after {
     position: absolute;
     color: #fff;
     width: 100%;
+    height: 100%; /* Make it occupy the full height */
     content: "Click Me!";
-    left: 0;
-    bottom: 0;
+    top: 0; /* Align the top */
+    left: 0; /* Align the left */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
     font-size: 24px;
+    font-weight: bold;
     text-align: center;
-    transform: rotate(-20deg);
-    transform-origin: 0 0;
-  }
+    font-family: 'Pacifico', cursive;
+}
   .giftbox .cover {
     width: 100%;
     top: 0;
